@@ -1,0 +1,184 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: jus;
+    margin: 0;
+    padding: 0px;
+    height: auto;
+    overflow-y: scroll;
+    background-image: linear-gradient(to bottom, #ebebde, #777764);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background-image: url('fundo.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ebebde;
+    padding: 200px;
+    text-align: center;
+}
+
+nav {
+    background-color: #4f4747;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ebebde;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color:#777764
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Adiciona posição relativa à seção Sobre Mim */
+    text-align: justify;
+    padding: 50px 400px;
+    margin: 20px;
+}
+
+.sobremim-background {
+    position: absolute;
+    padding: 10px;
+    bottom: 50%; /* Alinha o quadrado ao fundo da seção */
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 90%;
+    max-width: 800px;
+    height: 800px; /* Altura do quadrado */
+    background-color: #ebebde; /* Cor do quadrado */
+    z-index: -1; /* Coloca o quadrado atrás do conteúdo */
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.sobremim {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column; /* Define o fluxo de layout como coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.sobremim img {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+#formacao {
+    position: relative; /* Adiciona posição relativa à seção de formação */
+}
+
+.formacao-background {
+    position: absolute;
+    padding: 10px;
+    bottom: 50%; /* Alinha o quadrado ao fundo da seção */
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 90%;
+    max-width: 800px;
+    height: 200px; /* Altura do quadrado */
+    background-color: #ebebde; /* Cor do quadrado */
+    z-index: -1; /* Coloca o quadrado atrás do conteúdo */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#portfolio {
+    position: relative;
+}
+
+.portfolio-background {
+    position: absolute;
+    padding: 10px;
+    bottom: 50%; /* Alinha o quadrado ao fundo da seção */
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 90%;
+    max-width: 800px;
+    height: 600px; /* Altura do quadrado */
+    background-color: #ebebde; /* Cor do quadrado */
+    z-index: -1; /* Coloca o quadrado atrás do conteúdo */
+    border-radius: 5px;
+}
+
+.portfolio1 {
+    text-align: center;
+}
+
+.portfolio1 img {
+    max-width: 90%;
+    border-radius: 5px;
+}
+
+.portfolio1.legenda {
+    margin-top: 10px;
+    color: #4f4747;
+    text-decoration: none;
+}
+
+form {
+    color: #4f4747;
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 60px;
+    border-radius: 5px;
+    background-color: #ebebde;
+    margin-bottom: 40px;
+}
+label {
+    display: block; /* cada label e campo fiquem em uma linha separada */
+    margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ebebde;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 150px;
+}
+input[type="submit"] {
+    background-color:#4f4747;
+    color: #ebebde;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type="submit"]:hover {
+    background-color: #4f4747;
+}
+
+footer {
+    background-color: #4f4747;
+    color: #ebebde;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
